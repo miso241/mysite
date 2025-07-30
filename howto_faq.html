@@ -10,46 +10,117 @@
 
 <body>
     <header>
-        <ul>
-            <li><a href="#home"></a>home</li>
-            <li><a href="#how to"></a>how to</li>
-            <li><a href="#FAQ"></a>FAQ</li>
-            <li><a href="#event info"></a>event info</li>
-            <li><a href="#contact"></a>contact</li>
-        </ul>
+
     </header>
 
     <main>
-        <h2>How to</h2>
+        <!-- howto 紹介文 -->
+        <section class="howto-text">
+            <h2 class="section-title">How to</h2>
 
-        <p>はじめての方にも安心してご参加していただけるように
-            紹介していきます！
-            どんなことができるの？
-            どんな雰囲気？など「初めてで不安…」という方も大丈夫。
-            一歩踏み出すきっかけになりますように！
-        </p>
-
+            <p>はじめての方にも安心して参加していただけるように<br>
+                紹介していきます！<br>
+                どんなことができるの？<br>
+                どんな雰囲気？など「初めてで不安…」という方も大丈夫◎<br>
+                一歩踏み出すきっかけになりますように！
+            </p>
+        </section>
 
         <!-- 登録3step -->
-        <section>
-            <h3>簡単3step登録 🌱</h3>
+        <section class="entry-step">
+            <h3 class="sub-title">簡単3step登録 🌱</h3>
 
             <ol class="step-list">
-                <li>メタリーフへの登録</li>
-                <li>アバターの作成</li>
-                <li>気軽に話しかけてOK! もちろん耳だけ参加もOK! <br>
-                    （インターホン機能を使うと便利です！）</li>
+                <li>
+                    <span class="step-label">step 1</span>
+                    <p>メタリーフへの登録</p>
+                </li>
+
+                <li>
+                    <span class="step-label">step 2</span>
+                    <p>アバターの作成</p>
+                </li>
+
+                <li>
+                    <span class="step-label">step 3</span>
+                    <p>気軽に話しかけてOK!<br>＊インターホン機能を使うと便利＊ </p>
+                </li>
             </ol>
         </section>
 
-        <!-- メタリーフ説明 -->
-        <section>
-            <h3>メタリーフってこんなところ</h3>
 
+        <!-- メタリーフ説明 -->
+        <section class="about-place">
+            <h3 class="sub-title">メタリーフってこんなところ</h3>
+            <ul class="place-cards">
+                <li class="item-card">
+                    <h4>時間を有効活用できる場所</h4>
+                    <p>深夜・早朝や1時間だけなど、<br>
+                        ライフスタイルに合わせて<br>
+                        ふらっと入れる。<br>
+                        集中したい時も専用の部屋で作業ができる。<br>
+                        新しい形の繋がりの場です！</p>
+                </li>
+
+
+                <li class="item-card">
+                    <h4>「やってみたい」を形にする</h4>
+                    <p>スキルアップのための勉強会、<br>
+                        仲間との新規プロジェクト…<br>
+                        「やってみたい」が実現できる、<br>
+                        可能性に満ちた場所です！
+                    </p>
+                </li>
+
+
+                <li class="item-card">
+                    <h4>「聞けない」がない、安心の場所</h4>
+                    <p>
+                        初心者向けの部屋、レベル別の質問部屋など、同じ悩みを持つ人が集まる場所があります。<br>
+                        あなたの気持ちに寄り添ってくれる仲間が、必ず見つかります！
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 
+
+
+        add img/btn  
+        
+        -->
+        <section class="faq-accordion">
+            <h2 class="section-title">FAQ</h2>
+
+            <dl class="faq-list">
+                <dt><span>Q1.</span> 参加費はいくらですか？</dt>
+                <dd>
+                    <p>月額XXX円です。<br>クレジットカードにてお支払いお願いいたします。</p>
+                </dd>
+
+                <dt><span>Q2.</span> 参加はどこからできますか？</dt>
+                <dd>
+                    <p><a href="#contact">コンタクトフォーム</a>よりご登録をお願いします！<br>
+                        確認後、ご連絡いたします！</p>
+                </dd>
+
+                <dt><span>Q3.</span> 何時から何時まで使えるの？</dt>
+                <dd>
+                    <p>AM5:00~AM1:00まで利用可能です！<br>
+                        ご自身のライフスタイルに合わせてご活用ください！</p>
+                </dd>
+
+                <dt><span>Q4.</span> 詳しい使い方講座はありますか？</dt>
+                <dd>
+                    <p>はい！毎週開催しております！ぜひご参加ください！</p>
+                </dd>
+            </dl>
         </section>
     </main>
 
     <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
 
 </body>
 
