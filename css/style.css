@@ -181,6 +181,8 @@ footer {
     background-color: #c5c1f9;
     padding: 20px;
     margin-top: 80px;
+    position: relative;
+    bottom: 0;
 }
 footer p {
     text-align: center;
