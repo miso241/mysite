@@ -247,25 +247,6 @@ footer p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --------------------------------------------------------------------
     
 
@@ -388,3 +369,19 @@ contact form
   .Form-Btn:hover {
     background-color: #edebfb;
   }
+
+
+  /* responsive */
+@media(max-width: 800px) {
+    
+.topics-list {
+    flex-direction: column;
+}
+.place-cards {
+    flex-direction: column;
+}
+.item-card {
+    border-radius: 20px;
+    padding: 30px;
+}
+}

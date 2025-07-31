@@ -11,6 +11,11 @@ a {
     text-decoration: none;
     color: black;
 }
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}    
 .header {
     display: flex;
     justify-content: space-between;
@@ -54,11 +59,12 @@ a {
     bottom: -10px;
     opacity: 1;
 }
-
+/* mainvisual */
 .mainvisual img {
     width: 100%;
     margin-top: 250px;
     object-fit: cover;
+    
 }
 .wrapper {
     max-width: 1000px;
@@ -88,7 +94,8 @@ a {
     display: flex;
     margin-top: 30px;
     justify-content: space-around;
-}
+} 
+
 .topics-list li {
     margin-left: 20px;
     border: 2px solid #011638;
@@ -186,5 +193,6 @@ footer {
 }
 footer p {
     text-align: center;
+    margin-right: 50px;
     font-size: 0.8rem;
 }
