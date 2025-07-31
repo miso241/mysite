@@ -179,7 +179,6 @@ main {
 .faq-list dt {
     text-align: left;
     padding: 15px 80px;
-    /* background-color: #f0f0f0; */
     border-bottom: 2px solid #20A4F3;
     cursor: pointer;
     position: relative;
@@ -237,7 +236,6 @@ main {
     padding: 20px;
     margin-top: 80px;
     position: relative;
-    position: absolute;
     bottom: 0;
 }
 footer p {
@@ -274,5 +272,119 @@ footer p {
 event info
 
 
--------------------------------------------------------------------*/
- 
+---------------------------------------------------------------------*/
+/* 共通 */
+.event-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px;
+    font-size: 20px;
+}
+.event-wrapper .sub-title {
+    max-width: 300px;
+    margin-bottom: 50px;
+}
+.event-inner {
+    margin-bottom: 60px;
+}
+/* 今後のイベント */
+
+.event-item {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 20px;
+
+}
+.event-item dt {
+    padding: 0 20px;
+}
+
+/* 今までのイベント */
+.event-item-past {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;   
+}
+
+.event-item-past dt {
+    font-weight: bold;
+}
+
+.event-item-past dd {
+    padding-top: 8px;
+    margin-left: 0;  
+    line-height: 1.5; 
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------
+    
+
+contact form
+
+
+---------------------------------------------------------------------*/
+.Form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px; 
+    background-color: #edebfb;
+    border-radius: 20px;
+    border: 10px solid #fAA381;
+}
+
+.Form-Item {
+    margin-bottom: 30px;
+  }
+  
+  .Form-Item-Label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 30px;
+  }
+  
+  .Form-Item-Input,
+  .Form-Item-Textarea {
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none; 
+    background-color: white;
+    box-sizing: border-box; /* paddingを含めてwidth:100%にするための設定 */
+  }
+
+  .Form-Item-Input::placeholder,
+  .Form-Item-Textarea::placeholder {
+    color: #888;
+  }
+  
+  .Form-Item-Textarea {
+    height: 180px;
+  }
+  
+  /* 送信ボタン */
+  .Form-Btn {
+    display: block;
+    width: 200px; 
+    margin: 0 auto;
+    padding: 12px 0;
+    background-color: white;
+    border: 2px solid #011638;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .Form-Btn:hover {
+    background-color: #edebfb;
+  }
