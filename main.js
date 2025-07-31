@@ -11,4 +11,31 @@ $(function() {
     $(this).toggleClass('is-active');
 
   });
+
+
+
+
+
+
+  // hamburger menu
+  $(".toggle_btn").on("click", function () {
+    $("header").toggleClass("open");
+    $('html, body').toggleClass('is-scroll-fixed');
+  });
+
+  
+  // メニューのリンクをクリックした時
+  $("#nav a").on("click", function () {
+    $("header").toggleClass("open");
+  });
+  $("#nav a").on("click", function () {
+    $("header").removeClass("open");
+    $('html, body').removeClass('is-scroll-fixed');
+  });
+
+
+
+
+
+
 });
