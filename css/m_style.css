@@ -218,6 +218,11 @@ main {
     /* dl,dt,ddが持つデフォルトマージンをリセット */
     border-bottom: 2px solid #20A4F3;
 }
+.faq-list a {
+    color:#fAA381;
+    border-bottom: 2px solid;
+    width: 100%;
+}
 
 /* 最後の要素の下線を消す
 .faq-list > *:last-child {
@@ -400,6 +405,9 @@ contact form
     
 .topics-list {
     flex-direction: column;
+}
+.topics-list li {
+    margin: 10px;
 }
 .place-cards {
     flex-direction: column;
