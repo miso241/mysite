@@ -1,4 +1,246 @@
 @charset "UTF-8";
+
 body {
-    background-color: #DCD9FF;
+    background-color: #edebfb;
+    color: #011638;
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+    text-align: center;
+}
+
+.section-title {
+    font-size: 48px;
+    /* background-color: brown; */
+    padding: 100px 0 60px 0;
+}
+
+.sub-title {
+    font-size: 24px;
+    /* background-color: aquamarine; */
+    padding: 30px;
+}
+
+
+/*--------------------------------------------------------------------
+ ヘッダー
+ -------------------------------------------------------------------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #c5c1f9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.header-logo img {
+    width: 100px;
+    margin-left: 50px;
+}
+.header-list ul {
+    display: flex;
+}
+.header-list li {
+    font-size: 16px;
+}
+.header-list a {
+    margin-right: 50px;
+    position: relative;
+}
+.header-list a::before {
+    position: absolute;
+    content: '';
+    background-color: #20A4F3;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;   
+    opacity: 0;
+    visibility: hidden;
+}.header-list a:hover::before {
+    width: 100%;
+    visibility: visible;
+    bottom: -10px;
+    opacity: 1;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------
+ howto 紹介文
+ -------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------------
+ 3step登録 
+ -------------------------------------------------------------------*/
+.entry-step {
+    border-radius: 16px;
+    margin: 0 auto;
+    padding: 20px;
+    /* 上のやつchk！ */
+}
+
+.step-list {
+    max-width: 600px;
+    align-items: center;
+    padding-left: 0;
+    margin: 0 auto;
+}
+
+.step-list li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0 90px;
+}
+
+.step-list p {
+    text-align: left;
+}
+
+.step-label {
+    width: 80px;
+    height: 80px;
+    background-color: #FFEE93;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    color: #555;
+    font-weight: bold;
+    flex-shrink: 0;
+    /* 親が縮んでも自身は縮まないようにする */
+}
+
+
+
+/*--------------------------------------------------------------------
+ メタリーフってこんなところ  
+ -------------------------------------------------------------------*/
+.about-place {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.place-cards {
+    display: flex;
+    padding: 0 80px;
+    gap: 20px;
+}
+
+.item-card {
+    padding: 40px 30px 20px;
+    border: 2px solid #011638;
+    background-color: #ffff
+    ;
+    flex: 1;
+    border-radius: 10%;
+}
+
+.item-card h4 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*--------------------------------------------------------------------
+ FAQ  
+ -------------------------------------------------------------------*/
+/* アコーディオン全体 */
+.faq-list {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 質問部分（dt） */
+.faq-list dt {
+    text-align: left;
+    padding: 15px 80px;
+    /* background-color: #f0f0f0; */
+    border-bottom: 2px solid #20A4F3;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-list dt:first-child {
+    border-top: 2px solid #20A4F3;
+}
+
+
+
+/* 矢印のスタイル */
+.faq-list dt::after {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    transition: transform 0.5s;
+}
+
+/* ★重要：開いているときの矢印の向き */
+.faq-list dt.is-active::after {
+    transform: translateY(-50%) rotate(180deg);
+    /* 上向きにする */
+}
+
+
+/* 答えの部分（dd） */
+.faq-list dd {
+    display: none;
+    /* ★超重要：最初は非表示にしておく */
+    padding: 20px;
+    margin: 0;
+    /* dl,dt,ddが持つデフォルトマージンをリセット */
+    border-bottom: 2px solid #20A4F3;
+}
+
+/* 最後の要素の下線を消す
+.faq-list > *:last-child {
+  border-bottom: none;
+} */
+
+
+
+
+
+
+/*--------------------------------------------------------------------
+ フッター
+ -------------------------------------------------------------------*/
+ footer {
+    width: 100%;
+    background-color: #c5c1f9;
+    padding: 20px;
+    margin-top: 80px;
+    position: relative;
+    position: absolute;
+    bottom: 0;
+}
+footer p {
+    text-align: center;
+    font-size: 0.8rem;
 }
