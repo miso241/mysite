@@ -97,7 +97,7 @@ main {
 } 
 
 .topics-list li {
-    margin-left: 20px;
+    
     border: 2px solid #011638;
     padding: 40px;
     border-radius: 20px;
@@ -195,4 +195,21 @@ footer p {
     text-align: center;
     margin-right: 50px;
     font-size: 0.8rem;
+}
+  /* responsive */
+@media(max-width: 800px) {
+    
+.topics-list {
+    flex-direction: column;
+}
+.topics-list li {
+    margin: 10px;
+}
+.place-cards {
+    flex-direction: column;
+}
+.item-card {
+    border-radius: 20px;
+    padding: 30px;
+}
 }
