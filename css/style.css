@@ -298,7 +298,7 @@ top page
 } 
 
 .topics-list li {
-    margin-left: 20px;
+    
     border: 2px solid #011638;
     padding: 40px;
     border-radius: 20px;
@@ -758,12 +758,7 @@ footer p {
     text-align: center;
     font-size: 0.8rem;
 }
-
-
-
-
-
-  /* ★★★★★スクロール固定用★★★★ */
+ /* ★★★★★スクロール固定用★★★★ */
 html.is-scroll-fixed,
 body.is-scroll-fixed {
     overflow: hidden;
@@ -775,8 +770,6 @@ body.is-scroll-fixed {
 responsive
 
 -------------------------------------------------------------------*/
-
-  
 @media(max-width: 800px) {
     
 .topics-list {
@@ -790,10 +783,6 @@ responsive
     padding: 0;
     margin-right: 30px;
 }
-
-
-
-
 .place-cards {
     flex-direction: column;
 }
@@ -801,7 +790,6 @@ responsive
     border-radius: 20px;
     padding: 30px;
 }
-
 
  /* PC用のナビゲーションを非表示に */
  .header-list {
@@ -811,25 +799,3 @@ responsive
 .toggle_btn {
     display: block;
 }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
