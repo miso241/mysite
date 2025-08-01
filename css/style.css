@@ -1,9 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900');
-* {
-    outline: 1px solid red;
-  }
+
 html {
     scroll-behavior: smooth;
 }
@@ -81,7 +79,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding-left: 0;
-    padding-top: 40px;
+    padding-top: 80px;
 }
 .window img {
     width: 90%;
@@ -314,10 +312,10 @@ top page
     align-items: center;
 }
 .icon-img img {
-    width:15%;
-    height: 50%;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    padding: 30px;
+    object-fit: cover;
 }
 .text {
     font-size: 1rem;
@@ -336,6 +334,10 @@ top page
   font-weight: 400;
   line-height: 1.5;
   color: #011638;
+  flex: 1;
+  margin-bottom: 10px;
+  height: auto;
+  flex-wrap: wrap;
 }
 
 .speechBubble::before {
@@ -363,11 +365,65 @@ top page
   transform: skew(0, -25deg);
   transform-origin: right;
 }
+
+.fadeIn {
+    transform: translate3d(0, 50px, 0);
+    transition: 1s;
+    opacity: 0;
+  }
+.fadeIn.animated {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+
 /* group-photo */
 .group-photo img {
     width:100%;
     margin-top: 100px;
 }
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------
+ 
+howto 紹介文
+
+-------------------------------------------------------------------*/
+.howto-text {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    padding: 30px 20px;
+}
+.howto-text:before,.howto-text:after{ 
+    content:'';
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+}
+.howto-text:before{
+    border-left: solid 10px #5767bf;
+    border-top: solid 10px #5767bf;
+    top:0;
+    left: 0;
+}
+.howto-text:after{
+    border-right: solid 10px #5767bf;
+    border-bottom: solid 10px #5767bf;
+    bottom:0;
+    right: 0;
+}
+
+
+
+
+
 
 
 /*--------------------------------------------------------------------
@@ -720,21 +776,11 @@ responsive
     align-items: center;
     padding: 0;
 }
-.topics-list li {
-    width: 50%;      
-    margin-left: 0;
-    text-align: center;
-    margin-bottom: 20px;
-}
 .icon-img img {
     width: 100px;
     height: 100px;
     padding: 0;
     margin-right: 30px;
-}
-
-.speechBubble {
-    width: 60%;       
 }
 
 
