@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>top_page</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header">
         <h1 class="header-logo">
-            <img src="img/image_1 - 編集済み.png" alt="">
+            <a href="index.html"><img src="img/logo.png" alt="ロゴ"></a>
         </h1>
 
         <nav class="header-list">
@@ -23,10 +23,31 @@
                 <li><a href="event_info.html#contact">Contact</a></li>
             </ul>
         </nav>
+
+                <!-- hamburger menu -->
+                <nav id="navi">
+
+                    <ul class="navi-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="howto_faq.html">How to</a></li>
+                        <li><a href="howto_faq.html#faq">FAQ</a></li>
+                        <li><a href="event_info.html">Event info</a></li>
+                        <li><a href="event_info.html#contact">Contact</a></li>
+                    </ul>
+        
+                </nav>
+        
+                <div class="toggle_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        
     </header>
     <main>
+
         <div class="mainvisual">
-            <img src="img/mainvisual.jpg" alt="">
+            <img src="img/mainvisual.png" alt="メインビジュアル">
         </div>
         <section class="main-title wrapper">
             <h2 class="item">メタリーフとは</h2>
@@ -43,22 +64,22 @@
 
         <section class="article wrapper">
             <h2 class="topics-2">参加者の声</h2>
-            <div class="icon-img">
-                <img src="img/1.png" alt="">
+            <div class="icon-img fadeIn" >
+                <img src="img/icon-avatar01.png" alt="アバター">
                 <div class="speechBubble">
                     <p>横のつながりができて実際に相談することで早期解決に繋がりました！</p>
                 </div>
             </div>
-            <div class="icon-img">
-                <img src="img/2.png" alt="">
+            <div class="icon-img fadeIn">
+                <img src="img/icon-avatar02.png" alt="アバター">
                 <div class="speechBubble">
                     <p>様々な技術レベルの人たちが集まれる場所なので、お互い切磋琢磨しながら
                         <br>モチベーションキープに繋がっています！
                     </p>
                 </div>
             </div>
-            <div class="icon-img">
-                <img src="img/3.png" alt="">
+            <div class="icon-img fadeIn">
+                <img src="img/icon-avatar03.png" alt="アバター">
                 <div class="speechBubble">
                     <p>スキル面において相談する側にも教える側にもなれるので
                         <br>自然と技術向上に繋がります！
@@ -67,23 +88,24 @@
             </div>
         </section>
 
-        <div class="group-photo wrapper">
-            <div class="photo">
-                <img src="img/image_36.png" alt="">
-            </div>
+        <div class="photos wrapper">
+            <ul class="photo">
+                <img src="img/usagi_orange.png" alt="おっきいうさぎ">
+                <img src="img/usagi_blue.png" alt="おっきいうさぎ">
+            </ul>
             <div class="btn">
                 <a href="event_info.html#contact" class="join-btn">今すぐ参加する</a>
             </div>
         </div>
     </main>
+    
     <footer>
         <p>&copy;2025 metaleaf</p>
     </footer>
 
 
-
-
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
 
 </body>
 

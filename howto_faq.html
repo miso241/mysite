@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to/FAQ</title>
-    <link rel="stylesheet" href="css/m_style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header">
         <h1 class="header-logo">
-            <img src="img/image_1 - 編集済み.png" alt="">
+            <a href="index.html"><img src="img/logo.png" alt="ロゴ"></a>
         </h1>
 
         <nav class="header-list">
@@ -23,24 +23,53 @@
                 <li><a href="event_info.html#contact">Contact</a></li>
             </ul>
         </nav>
+
+        <!-- hamburger menu -->
+        <nav id="navi">
+
+            <ul class="navi-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="howto_faq.html">How to</a></li>
+                <li><a href="howto_faq.html#faq">FAQ</a></li>
+                <li><a href="event_info.html">Event info</a></li>
+                <li><a href="event_info.html#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="toggle_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
     </header>
 
     <main>
         <!-- howto 紹介文 -->
-        <section class="howto-text">
+        <section class="about-howto">
             <h2 class="section-title" id="howto">How to</h2>
 
-            <p>はじめての方にも安心して参加していただけるように<br>
+            <p class="howto-text">はじめての方にも安心して参加していただけるように<br>
                 紹介していきます！<br>
                 どんなことができるの？<br>
                 どんな雰囲気？など「初めてで不安…」という方も大丈夫◎<br>
                 一歩踏み出すきっかけになりますように！
             </p>
+
+            <ul class="img-group">
+                <li><img src="img/cosmos_blue.png" alt="コスモス青"></li>
+                <li><img src="img/cosmos_orange.png" alt="コスモスオレンジ"></li>
+                <li><img src="img/cosmos_blue.png" alt="コスモス青"></li>
+                <li><img src="img/cosmos_orange.png" alt="コスモス青"></li>
+                <li><img src="img/cosmos_blue.png" alt="コスモス青"></li>
+            </ul>
+
         </section>
 
         <!-- 登録3step -->
         <section class="entry-step">
-            <h3 class="sub-title">簡単3step登録 🌱</h3>
+            <h3 class="sub-title">簡単3step登録</h3>
 
             <ol class="step-list">
                 <li>
@@ -58,6 +87,13 @@
                     <p>気軽に話しかけてOK!<br>＊インターホン機能を使うと便利＊ </p>
                 </li>
             </ol>
+
+            <ul class="window">
+                <li><img src="img/window-orange.png" alt="うさぎ"></li>
+                <li><img src="img/window-blue.png" alt="うさぎ"></li>
+                <li><img src="img/window-orange.png" alt="うさぎ"></li>
+            </ul>
+
         </section>
 
 
@@ -93,14 +129,15 @@
                     </p>
                 </li>
             </ul>
+
         </section>
 
-        <!-- 
-
-
-        add img/btn  
         
-        -->
+            <div class="btn">
+                <a href="event_info.html#contact" class="join-btn">今すぐ参加する</a>
+            </div>
+
+
         <section class="faq-accordion">
             <h2 class="section-title" id="faq">FAQ</h2>
 
@@ -131,7 +168,7 @@
     </main>
 
     <footer>
-        <p>@2025 metaleaf</p>
+        <p> &copy; 2025 metaleaf</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
