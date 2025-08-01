@@ -1,13 +1,18 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900');
+* {
+    outline: 1px solid red;
+  }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Noto Sans JP";
     background-color: #edebfb;
     color: #011638;
     margin: 0;
 }
-
 
 li {
     list-style: none;
@@ -21,26 +26,24 @@ a {
 main {
     max-width: 1200px;
     margin: 0 auto;
-    /* background-color: antiquewhite; */
     text-align: center;
 }
 
 .section-title {
-    font-size: 48px;
-    /* background-color: brown; */
+    font-size: 56px;
     padding: 100px 0 60px 0;
+    /* color: #FF006C; */
 }
 
 .sub-title {
     font-size: 24px;
-    /* background-color: aquamarine; */
     padding: 30px;
 }
 
 
 .btn {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 .join-btn {
     font-weight: bold;
@@ -65,8 +68,25 @@ main {
 }
 .img-group img {
     width: 100%;
-    height: 20px;
+    height: 30px
 }
+
+
+/*---------------------
+ うさぎwindow
+ --------------------*/
+.window {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 40px;
+}
+.window img {
+    width: 90%;
+}
+
 
 
 /*--------------------------------------------------------------------
@@ -162,6 +182,7 @@ hamburger navi
     }
 #navi .navi-list  {
     display: block;
+    padding: 0;
 }
 #navi .navi-list a {
     color: white;
@@ -379,7 +400,6 @@ hamburger btn
  フッター
  -------------------------------------------------------------------*/
  footer {
-    width: 100%;
     background-color: #c5c1f9;
     padding: 20px;
     margin-top: 80px;
@@ -403,11 +423,11 @@ event info
 
 ---------------------------------------------------------------------*/
 .event-top img{
-    width: 100%;
+    max-width: 100%;
 }
 .event-top {
 	position: relative;
-    background-color: #20A4F3;
+    box-shadow: 0 0 0 10px #192A56;
 }
 .event-top::after {
 	content: '';
@@ -437,14 +457,32 @@ event info
 
 
 /* 今後のイベント */
+.event-inner dl {
+ display: flex;
+ flex-direction: column;
+ align-items: center; 
+ 
+}
+
 .event-item {
     max-width: 500px;
-    margin: 0 auto;
     display: flex;
     margin-bottom: 20px;
+    width: 100%;
+    align-items: center;
+    font-weight: bold;
+    padding-left: 80px;
+}
+.event-item img {
+    width: 80px;
+    color: #fAA381;
 }
 .event-item dt {
-    padding: 0 20px;
+    width: 120px;
+    flex-shrink: 0; /* 親がflexの時に縮まないようにするおまじない */
+}
+.event-item dd {
+    margin: 0;
 }
 
 /* 今までのイベント */
@@ -455,15 +493,24 @@ event info
 }
 
 .event-item-past dt {
+    display: flex;
     font-weight: bold;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #22978B;
 }
 
 .event-item-past dd {
     padding-top: 8px;
     margin-left: 0;  
     line-height: 1.5; 
+    margin-bottom: 80px;
 }
 
+.event-item-past img {
+width: 30px;
+}
 
 
 

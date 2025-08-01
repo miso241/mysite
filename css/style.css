@@ -312,7 +312,6 @@ hamburger btn
 }
 /* footer */
 footer {
-    width: 100%;
     background-color: #c5c1f9;
     padding: 20px;
     margin-top: 80px;
@@ -321,7 +320,6 @@ footer {
 }
 footer p {
     text-align: center;
-    margin-right: 50px;
     font-size: 0.8rem;
 }
 
