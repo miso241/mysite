@@ -118,6 +118,7 @@ main {
 }
 
 
+/* header navi */
 .header-list ul {
     display: flex;
 }
@@ -148,13 +149,9 @@ main {
 }
 
 
-
-
-
-
-/* --------------------
+/* -----------------------------------------------
 hamburger navi 
---------------------*/
+------------------------------------------------*/
 #navi {
     width: 100%;
     height: 100vh;
@@ -198,9 +195,9 @@ header.open #navi {
     visibility: visible; /* 見えて、操作もできるようにする */
   }
   
-/* -----------------------------------
+/* ------------------------------------------------
 hamburger btn
------------------------------------ */
+------------------------------------------------ */
 .toggle_btn {
     width: 100px;
     height: 100px;
@@ -210,9 +207,7 @@ hamburger btn
     /* background-color: #c5c1f9; */
     z-index: 20;
     }
-/* .toggle_btn:hover {
-    opacity: 0.7;
-} */
+
 .toggle_btn span {
     display: block;
     width: 50%; 
@@ -252,13 +247,119 @@ hamburger btn
   }
 
 
-
-
-
 /*--------------------------------------------------------------------
- howto 紹介文
+ 
  -------------------------------------------------------------------*/
 
+/* mainvisual */
+.mainvisual img {
+    width: 100%;
+    margin-top: 250px;
+    object-fit: cover;
+    
+}
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 3%;
+    /* border: 2px solid; */
+}
+
+/* topics-1 */
+.main-title {
+    text-align: center;
+}
+.item {
+    font-size: 40px;
+}
+.main-title p {
+    border: 2px solid #011638;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+.topics-1 ,.topics-2 {
+    font-size: 30px;
+    margin-top: 60px;
+}
+.topics-list { 
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+} 
+
+.topics-list li {
+    margin-left: 20px;
+    border: 2px solid #011638;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/* topics-2 */
+.topics-2 {
+    text-align: center;
+    margin: 50px;
+}
+.icon-img {
+    display: flex;
+    align-items: center;
+}
+.icon-img img {
+    width:15%;
+    height: 50%;
+    border-radius: 50%;
+    padding: 30px;
+}
+.text {
+    font-size: 1rem;
+    margin-left: 30px;
+}
+.speechBubble {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  padding: 16px;
+  border: 2px solid #011638;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #011638;
+}
+
+.speechBubble::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 0;
+  border-color: transparent #011638 transparent transparent;
+  translate: -100% -50%;
+  transform: skew(0, -25deg);
+  transform-origin: right;
+}
+
+.speechBubble::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-style: solid;
+  border-width: 0 15.2px 15.2px 0;
+  border-color: transparent #fdfdfd transparent transparent;
+  translate: -100% calc(-50% - 0.4px);
+  transform: skew(0, -25deg);
+  transform-origin: right;
+}
+/* group-photo */
+.group-photo img {
+    width:100%;
+    margin-top: 100px;
+}
 
 
 /*--------------------------------------------------------------------
@@ -268,7 +369,6 @@ hamburger btn
     border-radius: 16px;
     margin: 0 auto;
     padding: 20px;
-    /* 上のやつchk！ */
 }
 
 .step-list {
@@ -323,8 +423,7 @@ hamburger btn
 .item-card {
     padding: 40px 30px 20px;
     border: 2px solid #011638;
-    background-color: #ffff
-    ;
+    background-color: #ffff;
     flex: 1;
     border-radius: 10%;
 }
@@ -586,7 +685,7 @@ contact form
 
 
 
-  /* ★★★★★スクロール固定用のCSSを追記★★★★★ */
+  /* ★★★★★スクロール固定用★★★★★ */
 html.is-scroll-fixed,
 body.is-scroll-fixed {
     overflow: hidden;
@@ -607,9 +706,6 @@ body.is-scroll-fixed {
 }
 
 
-
-
-
  /* PC用のナビゲーションを非表示に */
  .header-list {
     display: none;
@@ -618,8 +714,6 @@ body.is-scroll-fixed {
 .toggle_btn {
     display: block;
 }
-
-
 }
 
 
